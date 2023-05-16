@@ -14,15 +14,7 @@ Icon Extractor is a dynamic-link library (DLL) for extracting icons from files u
 ShellIconExtractor iconExtractor = new ShellIconExtractor(filePath, iconIndex);
 Icon icon = iconExtractor.GetIcon(32); // Retrieve a 32x32 icon
 ```
-Eg.
-```csharp
-Icon icon32;
-using (ShellIconExtractor iconExtractor = new ShellIconExtractor(@"%SystemRoot%\System32\shell32.dll", 70))
-{
-    icon32 = iconExtractor.GetIcon(32);
-}
-this.Icon = icon32;
-```
+For more information, refer to the [Wiki](https://github.com/korayustundag/IconExtractor/wiki).
 ## Dependencies
 - Shell32.dll
 ## Build
